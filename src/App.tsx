@@ -30,9 +30,9 @@ const IMAGES = [
 ];
 
 const REELS = [
-  { url: "https://www.facebook.com/share/r/1AsjHKS5b5/", title: "Zaglądamy do kuchni" },
-  { url: "https://www.facebook.com/share/r/18fXuxKM1h/", title: "Lepione z pasją" },
-  { url: "https://www.facebook.com/share/r/16p2cuzhDG/", title: "Nasze specjały" }
+  { url: "https://www.facebook.com/reel/1721899819185338/", title: "Nasza codzienność" },
+  { url: "https://www.facebook.com/reel/828865200182686/", title: "Świeże składniki" },
+  { url: "https://www.facebook.com/reel/791609857093265/", title: "Sztuka lepienia" }
 ];
 
 export default function App() {
@@ -306,7 +306,7 @@ export default function App() {
                  >
                     <div className="relative aspect-[9/16] rounded-2xl overflow-hidden bg-brand-ink mb-4 shadow-inner">
                       <iframe 
-                        src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(reel.url)}&show_text=0&t=0`} 
+                        src={`https://www.facebook.com/plugins/video.php?height=476&width=267&href=${encodeURIComponent(reel.url)}&show_text=false&t=0`} 
                         className="absolute inset-0 w-full h-full border-0"
                         scrolling="no" 
                         allowFullScreen={true}
